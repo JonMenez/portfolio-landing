@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap");
+
+:root {
+  --primary: #001829;
+  --secondary: #297ea6;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*       Services Section.       */
+
+.services {
+  background-color: var(--primary);
+  font-family: "Poppins";
+  height: 110vh;
+  padding-top: 2rem;
+}
+
+.services__card {
+  background-color: #fff;
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+  padding-bottom: 0.8rem;
+}
+
+.card__main {
+  color: var(--secondary);
+  position: relative;
+  /*font-size: clamp(1rem, 2vmin + 10px, 1.7rem)*/
+  font-size: calc(2vmin + 10px);
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.card__main::after {
+  content: "";
+  display: block;
+  text-align: center;
+  width: 20vw;
+  height: 6px;
+  background-color: var(--secondary);
+
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.card__item {
+  display: flex;
+  width: calc(100% - 2rem);
+  margin-left: 1.5rem;
+}
+
+.card__svg {
+  flex: 1;
+  transform: scale(1.2);
+}
+
+.items {
+  flex: 2.5;
+  padding-bottom: 1rem;
+  margin-right: 0.5rem;
+}
+
+.card__title {
+  font-weight: 500;
+  font-size: clamp(1rem, 10vw - 1rem, 1.4rem);
+  line-height: 1.4;
+  margin-top: 0.7rem;
+  margin-bottom: 0.3rem;
+}
+
+.card__text {
+  font-weight: 300;
+  font-size: clamp(0.8rem, 6vw - 1rem, 1rem);
+  line-height: 1.4;
+}
+
+.card--reverse {
+  flex-direction: row-reverse;
+  margin-top: 0;
+}
+
+.card--hidden {
+  transform: scale(0);
+}
+
+@media screen and (min-width: 45em) {
+  .services__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .card__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 0;
+    margin-bottom: 1rem;
+    align-items: center;
+    width: clamp(17rem, 35vw - 1rem, 35rem);
+  }
+
+  .card__main {
+    width: 100%;
+    /*font-size: 2rem;*/
+    padding: 2rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .card__main::after {
+    bottom: 0.2rem;
+  }
+
+  .card__svg {
+    transform: scale(1.8);
+  }
+
+  .items {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card__title {
+    align-self: center;
+    border: 1px solid #000;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .services__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .card__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 0;
+    margin-bottom: 1rem;
+    width: clamp(17rem, 40vw - 1rem, 30rem);
+  }
+
+  .card__main {
+    width: 100%;
+    font-size: 2.4rem;
+    padding: 2rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .card__main::after {
+    bottom: 0.2rem;
+  }
+
+  .card__svg {
+    transform: scale(1.8);
+  }
+
+  .items {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    /* border   : solid; */
+    padding-left: clamp(2rem, 10vw - 1rem, 3rem);
+  }
+
+  .card__title {
+    padding: 0.6rem 0;
+  }
+}
+
+/*        Testimony Section       */
+
+body {
+  width: 100vw;
+  background-color: #40525f;
+}
+
+.testimony {
+  text-align: center;
+  margin: auto;
+}
+
+.testimony__title {
+  color: #fff;
+  font-family: "Lobster";
+  font-size: clamp(1rem, 1.5rem, 2rem);
+  width: clamp(5rem, 58vw - 1rem, 12rem);
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.main {
+  position: relative;
+}
+
+.main::before,
+.main::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.main::before {
+  height: 101%;
+  background: #40525f;
+  left: -0.1rem;
+  right: -0.1rem;
+  z-index: -1;
+}
+
+.main::after {
+  background: #fff;
+  width: 100vw;
+  height: 10%;
+  top: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -2;
+}
+
+.card {
+  width: calc(100vw - 2rem);
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  justify-content: space-around;
+  padding: 1rem;
+  max-width: 32rem;
+}
+
+.testimony__img {
+  padding-top: 1rem;
+}
+
+.card__title {
+  font-family: "Oswald";
+  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.card__title .card__title--main {
+  color: #626262;
+  font-size: 1.9rem;
+}
+
+.card__title .card__title--sub {
+  color: #297ea6;
+  font-size: 1.1rem;
+  font-weight: 400;
+  width: 80%;
+}
+
+.card__body {
+  width: 90%;
+  font-family: "Oswald";
+  font-size: 1.1rem;
+  color: #828282;
+  padding: 2rem 0.5rem;
+}
+
+@media screen and (min-width: 48em) {
+  .testimony__title {
+    font-size: 1.7rem;
+    width: calc(50vw - 8rem);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .main::before {
+    height: 120%;
+  }
+
+  .main::after {
+    width: 60vw;
+    top: 50%;
+    transform: translateX(-50%);
+  }
+
+  .card {
+    width: calc(100vw - 1rem);
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background: #fff;
+    padding: 1rem;
+    max-width: 35rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testimony__img {
+    padding-top: 1rem;
+    transform: scale(1.2);
+  }
+
+  .card__title {
+    font-family: "Oswald";
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .card__title .card__title--main {
+    color: #626262;
+    font-size: 1.7rem;
+  }
+
+  .card__title .card__title--sub {
+    align-content: stretch;
+    color: #297ea6;
+    font-size: 1.3rem;
+    font-weight: 400;
+    width: fit-content;
+  }
+
+  .card__body {
+    font-size: 1.1rem;
+    color: #828282;
+    padding-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .testimony__title {
+    font-size: 1.7rem;
+    width: calc(40% - 8rem);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  /* 
+    .main::before {
+        height    :110%;
+        background: #40525F;
+        left      : 0;
+        right     : 0;
+        z-index   : -1;
+    }
+    
+    .main::after {
+        background: #fff;
+        width     : 60vw;
+        height    : .45rem;
+        top       : 50%;
+        left      : 50%;
+        transform : translateX(-50%);
+        z-index   : -2;
+    } */
+
+  .card--hidden {
+    transform: scale(1);
+  }
+
+  .testimony__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: none;
+  }
+
+  .card {
+    width: 25%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background: #fff;
+    padding: 1.5rem 0;
+    max-width: none;
+    justify-content: center;
+    align-items: center;
+  }
+}
