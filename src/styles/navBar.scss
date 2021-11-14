@@ -1,0 +1,40 @@
+@import 'vars';
+
+
+.home {
+    display: none;
+  }
+  
+  .navigation {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    top: 100%;
+    left: 0;
+    transform: translateY(-100%) ;
+    z-index: -1;
+    transition: 200ms ease-in-out;
+        &__item {
+          font-size: 1rem;
+          list-style: none;
+          width: 50%;
+          padding: 1rem 0.5rem;
+          padding-bottom: 0;
+          background: $secondary;
+          cursor: pointer;
+  
+         
+        }
+        &__link {
+          padding: .5rem;
+        }  
+  
+  }
+  
+  
+  #active {
+    transform: translateY(0%);
+  }
+  
