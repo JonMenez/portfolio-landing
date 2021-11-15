@@ -4,6 +4,7 @@ import PorfolioIcon from '../assets/icons/code-block.svg';
 import FeedBack from '../assets/icons/message-detail.svg';
 import AboutIcon from '../assets/icons/body.svg';
 import MenuIcon from '../assets/icons/menu.svg';
+import ContactIcon from '../assets/icons/envelope.svg';
 import HomeIcon from '../assets/icons/home.svg';
 import '../styles/navBar.scss'
 
@@ -25,28 +26,34 @@ const NavBar = () => {
               <img src={ HomeIcon } alt="Home button" />
             </a>
           </li>
-          <li className="navigation__item ">
+          <li className="navigation__item nav__tablet1">
             <img className="nav__icon" src={ PorfolioIcon } alt="Porfolio icon" />
             <a className="navigation__link" href="#">
               Portfolio
             </a>
           </li>
-          <li className="navigation__item nav__tablet">
+          <li className="navigation__item ">
             <img className="nav__icon" src={ PorfolioIcon} alt="Servies icon" />
             <a className="navigation__link" href="#">
               Services
             </a>
           </li>
-          <li className="navigation__item nav__tablet">
+          <li className="navigation__item ">
             <img className="nav__icon" src={ FeedBack } alt="Feedback icon" />
             <a className="navigation__link" href="#">
               Feedbacks
             </a>
           </li>
-          <li className="navigation__item">
+          <li className="navigation__item nav__tablet2">
             <img className="nav__icon" src={ AboutIcon } alt="About me icon" />
             <a className="navigation__link" href="#">
               About me
+            </a>
+          </li>
+          <li className="navigation__item contactButton">
+          <img className="nav__icon--contact" src={ ContactIcon } alt="Porfolio icon" />
+            <a className="navigation__link" href="#">
+              Contact me
             </a>
           </li>
         </ul>
