@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'mixins';
 
+  /* Navigation bar */
 
 .home {
     display: none;
@@ -79,6 +80,67 @@ border-radius: 4px;
 
 @include md {
   
+  .navigation {
+    width: 60%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    top: 100%;
+    left: 64%;
+    transform: translateX(60%);
+    // transform: translatey(-100%);
+    z-index: 1;
+    transition: 200ms ease-in-out;
+        &__item {
+          display: flex;
+          justify-content: flex-start;
+          font-size: 1.1rem;
+          width: 60%;
+          padding: 1rem 0.5rem;
+          padding-bottom: 0;
+          background: $secondary;
+          cursor: pointer;
+        }
+        &__link {
+          padding: .5rem;
+          margin-left: 1rem;
+          
+        }  
+  
+  }
+
+  .nav__icon {
+    width: 2rem;
+  }
+
+  #active {
+    transform: translateX(0%);
+    // transform: translateY(0%);
+  }
+
+  .contactButton {
+   
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    width: 60%;
+    padding: .5rem 0;
+    background-color: darken( $secondary, 10% );
+  }
+
+  .contactButton a {
+    margin: 0;
+  }
+
+  .nav__icon--contact{
+    width: 2rem;
+  }
+
+  .home{
+    display: none;
+  }
+
 }
   
 
