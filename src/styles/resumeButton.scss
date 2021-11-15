@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'mixins';
 
 .resume {
 
@@ -24,4 +25,23 @@
     }
 
    
+}
+
+@include lg {
+  
+  .resume {
+  
+  &__button {
+    margin: {
+      top: 2.5rem;
+      left: 4rem;
+    }
+  }
+
+  &__link {
+    font-size: 1rem;
+  }
+
+
+}
 }
