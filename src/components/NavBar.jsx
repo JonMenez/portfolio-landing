@@ -1,8 +1,10 @@
 import React from 'react';
+import { useState } from 'react';
 import PorfolioIcon from '../assets/icons/code-block.svg';
 import FeedBack from '../assets/icons/message-detail.svg';
 import AboutIcon from '../assets/icons/body.svg';
 import MenuIcon from '../assets/icons/menu.svg';
+import HomeIcon from '../assets/icons/home.svg';
 import '../styles/navBar.scss'
 
 
@@ -11,15 +13,17 @@ import '../styles/navBar.scss'
 
 
 const NavBar = () => {
-  //const [active, setActive] = useState(false);
+  const [active, setActive] = useState(false);
 
   return (   
     <nav>
         <ul className="navigation" 
-        //id={active ? "active" : ""}
+        id={active ? "active" : ""}
         >
           <li className="navigation__item home">
-            <a href="#">Home</a>
+            <a href="#">
+              <img src={ HomeIcon } alt="Home button" />
+            </a>
           </li>
           <li className="navigation__item ">
             <img className="nav__icon" src={ PorfolioIcon } alt="Porfolio icon" />
@@ -48,7 +52,7 @@ const NavBar = () => {
         </ul>
         <button
           className="navigation__button"
-          //onClick={() => setActive(!active)}
+          onClick={() => setActive(!active)}
         >
           <img className="navigation__menu" src={ MenuIcon } alt="Menu icon" />
         </button>
