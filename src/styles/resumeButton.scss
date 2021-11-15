@@ -1,0 +1,27 @@
+@import 'vars';
+
+.resume {
+
+    &__button {
+      display: block;
+      width: 6.5rem;
+      background-color: $primary;
+      border: none;
+      margin: {
+        left: 1rem;
+        top: 1rem
+      }}
+      
+      &__link {
+        display: flex;
+        padding: .5rem .3rem;
+        border: 1px solid #fff;
+        font-size: 1rem;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 8px;
+      
+    }
+
+   
+}
