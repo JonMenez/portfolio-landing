@@ -37,4 +37,28 @@
   #active {
     transform: translateY(0%);
   }
+
+  /* Navigaton button */
+
+.navigation {
+
+  &__button {
+    background-color: $primary;
+    border: none;
+    margin-right: 1rem;
+    margin-top: 1.2rem;
+  }
+  
+  &__icon {
+    border-radius: 8px;
+    border: 1px solid #fff;
+  }
+}
+
+.navigation__menu {
+width: 40px;
+display: block;
+border: 1px solid #fff;
+border-radius: 4px;
+}
   
