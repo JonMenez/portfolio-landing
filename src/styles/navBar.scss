@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'mixins';
 
 
 .home {
@@ -62,3 +63,43 @@ border: 1px solid #fff;
 border-radius: 4px;
 }
   
+
+@include lg {
+  .home {
+    display: block;
+  }
+
+  
+  .navigation {
+    border: 1px solid #fff;
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    transform: translateY(0%) ;
+    z-index: 0;
+    transition: 200ms ease-in-out;
+        &__item {
+          font-size: 1rem;
+          list-style: none;
+          width: fit-content;
+          padding: 0;
+          padding-bottom: 0;
+          background: $primary;
+          cursor: pointer;
+  
+         
+        }
+        &__link {
+          padding: .5rem;
+        }  
+  
+  }
+
+  .nav__icon, 
+  .navigation__button {
+    display: none;
+  }
+}
