@@ -7,8 +7,10 @@ import '../styles/header.scss';
 const Header = () => {
     return (
         <header className='NavBar'>
+            <div className="navBar__navigation">
             <ResumeButton/>
             <NavBar/>
+            </div>
         </header>
     )
 }
