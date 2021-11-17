@@ -27,3 +27,11 @@ $screen-lg-min: 992px;
        @content;
    }
 }
+
+
+// Custom devices
+@mixin custom($screen) {
+    @media (min-width: $screen ) {
+        @content;
+    }
+ }
