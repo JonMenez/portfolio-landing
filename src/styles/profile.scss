@@ -1,0 +1,215 @@
+@import 'mixins';
+
+
+.profile {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7rem;
+    background-color: #001829;
+    z-index: 1;
+
+    &__pic {
+        display: inline-block;
+        max-width: 50%;
+        border-radius: 50%;
+    }
+
+    &__title{
+        font-family: "Oswald";
+        color: #fff;
+        font-size: 2rem;
+        padding-top: .5rem;
+    }
+
+    &__text {
+        display: none;
+    }
+}
+
+.profile__polygon{
+    position: absolute;
+    z-index: -1;
+
+}
+
+.polygon1 {
+    width: 12rem;
+    top: 15;
+    left: 0;
+    transform: translateX(1rem);
+    
+}
+
+.polygon2 {
+    width: 8rem;
+    transform: translateX(-60%);
+    top: 55%;
+    right: 50%;
+}
+
+.polygon3,
+.polygon4,
+.profile__icon {
+    display: none;
+}
+
+.polygon--main {
+    bottom: 0;
+    right: 0;
+}
+
+
+@include custom(600px) {
+    .profile {
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 7rem;
+        background-color: #001829;
+        z-index: 1;
+    
+        &__pic {
+            display: inline-block;
+            max-width: 40%;
+            border-radius: 50%;
+        }
+    
+        &__title{
+            font-family: "Oswald";
+            color: #fff;
+            font-size: 2rem;
+            padding-top: .5rem;
+        }
+    }
+    
+    .profile__polygon{
+        position: absolute;
+        z-index: -1;
+    
+    }
+    
+    .polygon1 {
+        width: 13rem;
+        top: 15;
+        left: 0;
+        transform: translateX(1rem);
+        
+    }
+    
+    .polygon2 {
+        width: 8rem;
+        transform: translateX(-60%);
+        top: 60%;
+        right: 50%;
+    }
+
+    
+    
+    .polygon--main {
+        bottom: 20;
+        right: 10;
+    }
+}
+
+@include lg {
+
+.profile {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: space;
+    justify-content: center;
+    padding-top: 7rem;
+    background-color: #001829;
+
+    &__pic {
+        display: inline-block;
+        max-width: 20%;
+        border-radius: 100%;
+        margin: {
+            bottom: 10rem;
+            right: 1.5rem;
+        };
+    }
+
+    &__title{
+        font-family: "Oswald";
+        color: #fff;
+        font-size: 3rem;
+
+    }
+
+    &__text{
+        display: inline-block;
+        color: #fff;
+        font-family: "Oswald";
+        font-size: 1.2rem;
+        padding-left: .8rem;
+        
+    }
+    }
+    
+    .profile__body {
+        display: inline-block;
+        margin: {
+            bottom: 12rem;
+            right: 5rem;
+        };
+    }
+    .profile__icon {
+        display: inline-block;
+        padding: {
+            left: .8rem;
+            top: .8rem
+        };
+        
+    }
+
+.polygon1 {
+    width: 13rem;
+    top: 18%;
+    left: 10%;
+    transform: translateX(1rem);
+    
+}
+
+.polygon2 {
+    width: 8rem;
+    transform: translateX(-60%);
+    top: 20%;
+    right: 5%;
+}
+
+.polygon3 {
+    display: inline-block;
+    top: 30%;
+    right: 35%;
+}
+
+.polygon4 {
+    display: inline-block;
+    bottom: 5%;
+    left: 10%;
+    transform: scale(1.5);
+}
+
+.polygon--main {
+    bottom: 15%;
+    right: 15%;
+    transform: scale(1.2);
+}
+
+
+
+
+}
+
