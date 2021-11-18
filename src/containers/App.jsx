@@ -10,11 +10,9 @@ const App = () => {
     return (
         <Fragment>    
         
-
            <Header />  
            <Profile />
       
-
         </Fragment>
     )
 }
