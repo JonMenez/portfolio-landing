@@ -1,13 +1,13 @@
-import React from 'react';
-import Photo from '../assets/images/profile.png';
+import React       from 'react';
+import Photo       from '@images/profile.png';
+import Polygon     from '@images/polygon.svg';
+import PolygonMain from '@images/polygon-main.svg';
+import jsIcon      from '@icons/javascrpt.svg';
+import reactIcon   from '@icons/react.svg';
+import sassIcon    from '@icons/sass.svg';
+import figmaIcon   from '@icons/figma.svg';
+import gitIcon     from '@icons/git.svg';
 import '../styles/profile.scss';
-import Polygon from '../assets/images/polygon.svg';
-import PolygonMain from '../assets/images/polygon-main.svg';
-import jsIcon from '../assets/icons/javascrpt.svg';
-import reactIcon from '../assets/icons/react.svg';
-import sassIcon from '../assets/icons/sass.svg';
-import figmaIcon from '../assets/icons/figma.svg';
-import gitIcon from '../assets/icons/git.svg';
 
 
 const Profile = () => {

@@ -1,12 +1,12 @@
-import React from 'react';
+import React        from 'react';
 import { useState } from 'react';
-import PorfolioIcon from '../assets/icons/code-block.svg';
-import FeedBack from '../assets/icons/message-detail.svg';
-import AboutIcon from '../assets/icons/body.svg';
-import MenuIcon from '../assets/icons/menu.svg';
-import ContactIcon from '../assets/icons/envelope.svg';
-import HomeIcon from '../assets/icons/home.svg';
-import '../styles/navBar.scss'
+import PorfolioIcon from '@icons/archive.svg';
+import FeedBack     from '@icons/message-detail.svg';
+import AboutIcon    from '@icons/body.svg';
+import MenuIcon     from '@icons/menu.svg';
+import ContactIcon  from '@icons/envelope.svg';
+import HomeIcon     from '@icons/home.svg';
+import '@styles/navBar.scss'
 
 
 

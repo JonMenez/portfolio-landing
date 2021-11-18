@@ -1,7 +1,7 @@
-import React from 'react';
-import ResumeButton from '../components/ResumeButton';
-import NavBar from '../components/NavBar';
-import '../styles/header.scss';
+import React        from 'react';
+import ResumeButton from '@components/ResumeButton';
+import NavBar       from '@components/NavBar';
+import '@styles/header.scss';
 
 
 const Header = () => {

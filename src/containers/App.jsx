@@ -1,8 +1,8 @@
-import React from 'react'
-import Header from './Header'
-import Profile from '../components/Profile';
-import '../styles/app.scss'
+import React        from 'react'
 import { Fragment } from 'react';
+import Header       from './Header'
+import Profile      from '@components/Profile';
+import '@styles/app.scss'
 
 
 

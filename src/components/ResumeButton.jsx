@@ -1,6 +1,6 @@
-import React from 'react';
-import ResumeIcon from '../assets/icons/resume.svg';
-import '../styles/resumeButton.scss';
+import React      from 'react';
+import ResumeIcon from '@icons/resume.svg';
+import '@styles/resumeButton.scss';
 
 const ResumeButton = () => {
     return (
