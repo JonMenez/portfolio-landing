@@ -1,0 +1,75 @@
+@import 'vars';
+@import 'mixins';
+
+
+
+.services {
+    background-color: $primary;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+
+    &__card {
+        width: 90vw;
+        background-color: #fff;
+        margin: auto;
+        padding-bottom: .5rem;
+    }
+
+    &__main {
+        font-family: "Poppins";
+        font-size: clamp(1.3rem, 1.25vw + 1rem, 2rem);
+        font-weight: 900;
+        color: $secondary;
+        text-align: center;
+        padding: 1.5rem;
+        text-transform: uppercase;
+
+        &::after {
+            content: '';
+            display: block;
+            // width: 5em;
+            // max-width: 150px;
+            width: clamp(5rem, 15vw + 2rem, 600px);
+            height: 5px;
+            background-color: $secondary;
+            margin: auto;
+            margin-top: 1rem;
+        }
+    }
+}
+
+@include sm {
+      
+
+.services {
+    background-color: $primary;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+
+    &__card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 1.2rem;
+    }
+
+    &__main {
+        width: 100%;
+        text-align: center;
+        padding: 1.5rem;
+        text-transform: uppercase;
+
+        &::after {
+            content: '';
+            display: block;
+            // width: 5em;
+            // max-width: 150px;
+            height: 5px;
+            background-color: $secondary;
+            margin: auto;
+            margin-top: 1rem;
+        }
+    }
+  }
+}
+

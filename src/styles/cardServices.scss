@@ -1,0 +1,144 @@
+@import 'vars';
+@import 'mixins';
+
+.services {
+
+    &__item {
+        text-align: center;
+        margin: 1rem;
+        margin-bottom: 1.8rem;
+        
+    }
+
+
+}
+
+.services {
+
+    &__img{
+      width:  5rem;
+      height: 5rem;
+      border: 2px solid $secondary;
+      border-radius: 50%;
+      margin-bottom: .8rem;
+      padding: 1rem;
+      align-self: center;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+      flex: 1;
+    }
+    &__text{
+      font-family: "Poppins";
+      
+      
+    }
+
+    &__title{
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+    &__body {
+        font-size: clamp(1rem, 10vw - 1rem, 0.5rem);
+        font-weight: 300;
+    }
+
+}
+
+@include sm {
+
+    .services {
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 1.8rem;
+            margin: .8rem;
+            width: 40%;
+            
+        }
+    
+    
+    }
+    
+    .services {
+    
+        &__img{
+          width:  5rem;
+          height: 5rem;
+          border: 2px solid $secondary;
+          border-radius: 50%;
+          margin-bottom: .8rem;
+          padding: 1rem;
+          align-self: center;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+          flex: 1;
+        }
+        &__text{
+          font-family: "Poppins";
+          
+          
+        }
+    
+        &__title{
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+    
+        &__body {
+            font-size: clamp(1rem, 10vw - 1rem, 0.5rem);
+            font-weight: 300;
+        }
+    
+    }
+}
+
+@include lg {
+    .services {
+
+        &__item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            text-align: center;
+            margin-bottom: 1.8rem;
+            margin: 2rem;
+            width: 45%;
+            
+        }
+    
+    
+    }
+    
+    .services {
+    
+        &__img{
+          width:  7rem;
+          height: 7rem;
+          border: 2px solid $secondary;
+          border-radius: 50%;
+          margin-bottom: .8rem;
+          padding: 1.5rem;
+          flex: 0;
+        }
+        &__text{
+          font-family: "Poppins";
+          text-align: left;
+          padding-left: 1rem;
+          
+          
+        }
+    
+        &__title{
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+    
+        &__body {
+            font-size: clamp(1rem, 10vw - 1rem, 0.5rem);
+            font-weight: 300;
+        }
+    
+    }
+
+}
