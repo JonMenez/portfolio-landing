@@ -1,12 +1,14 @@
-import React from 'react'
+import React from 'react';
+import '@styles/cardServices.scss';
 
-const CardServices = () => {
+
+const CardServices = ({data}) => {
     return (
-        <div>
-            <img src="" alt="" />
-            <div>
-                <h3></h3>
-                <p></p>
+        <div className="services__item">
+            <img className="services__img" src={data.image} alt="" />
+            <div className="services__text">
+                <h3 className="services__title">{data.title}</h3>
+                <p className="services__body">{data.info }</p>
             </div>
         </div>
     )
