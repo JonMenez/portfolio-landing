@@ -23,13 +23,13 @@
         text-align: center;
         padding: 1.5rem;
         text-transform: uppercase;
+        letter-spacing: 2px;
 
         &::after {
             content: '';
             display: block;
-            // width: 5em;
-            // max-width: 150px;
-            width: clamp(5rem, 15vw + 2rem, 600px);
+            
+            width: clamp(5rem, 15vw + 2rem, 400px);
             height: 5px;
             background-color: $secondary;
             margin: auto;
