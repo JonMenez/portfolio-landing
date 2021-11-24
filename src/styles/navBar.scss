@@ -180,12 +180,41 @@ border-radius: 4px;
         }
         &__link {
           padding: .5rem;
+          color: $lightGrey;
+          position: relative;
+
+          &:hover {
+            color: #fff;
+          }
+          
         }  
   
   }
 
+  .navigation__link {
+
+    &::after {
+    content: '';
+    position: absolute;
+    left: 7%;
+    bottom: 8%;
+    width: 85%;
+    height: 3px;
+    background-color: #fff;
+
+    transition: transform 0.2s ease;
+    transform: scale(0);
+    }
+
+    &:hover::after{
+      transform: scale(1);
+    }
+
+  }
+
   .contactButton {
     display: flex;
+    
     align-self: center;
     background-color: transparent;
     border-radius: 10px;
@@ -198,7 +227,6 @@ border-radius: 4px;
       content: '';
       position: absolute;
       color: #fff;
-      
       top: 0;
       right: 0;
       width: 100%;
@@ -216,7 +244,7 @@ border-radius: 4px;
       content: '';
       position: absolute;
       top: 0;
-      right: 0;
+      left: -2;
       width: 100%;
       height: 100%;
       border-radius: 8px;
