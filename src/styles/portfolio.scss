@@ -1,0 +1,30 @@
+@import 'vars';
+@import 'mixins';
+
+.portfolio {
+     background-color: $primary;
+     width: 100%;
+    
+  
+
+    &__title {
+        display: block;
+        padding: 1rem;
+        padding-top: 4rem;
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+@include lg {
+
+       .portfolio__title {
+           display: block;
+           padding: 1rem;
+           padding-top: 4rem;
+           margin: 0 auto;
+           width: 60%;
+           opacity: .5;
+       }
+   
+}
