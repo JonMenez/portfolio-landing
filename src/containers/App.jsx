@@ -1,21 +1,22 @@
-import React        from 'react'
+import React        from 'react';
 import { Fragment } from 'react';
-import Header       from './Header'
+import Header       from '@containers/Header';
 import Profile      from '@containers/Profile';
-import Services     from './Services';
-import '@styles/app.scss'
-import Welcome from './Welcome';
+import Services     from '@containers/Services';
+import Welcome      from '@containers/Welcome';
+import Portfolio    from '@containers/Portfolio';
+import '@styles/app.scss';
 
 
 
 const App = () => {
     return (
         <Fragment>    
-        
            <Header />  
            <Profile />
            <Services />
            <Welcome />
+           <Portfolio />
         </Fragment>
     )
 }
