@@ -1,14 +1,17 @@
 import React from 'react';
-import projectsIcon from '../assets/icons/projects.svg';
+import projectsIcon from '@icons/projects.svg';
 import '@styles/portfolio.scss';
+import PortfolioCard from '@components/PortfolioCard';
 
 
 const Portfolio = () => {
     return (
         <section className="portfolio">
-            {/* <h4 className="portfolio__title">Projects</h4> */}
             <img className="portfolio__title" src={ projectsIcon } alt="" />
-            <div></div>
+            <div className="portfolio__card">
+            <PortfolioCard/>
+            <PortfolioCard/>
+            </div>
         </section>
     )
 }
