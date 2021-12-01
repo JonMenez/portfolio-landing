@@ -114,7 +114,7 @@
 
     .card__links {
         opacity: 1;
-        transform: translateY(25%);
+        transform: translateY(30%);
     }
 
 }
@@ -123,6 +123,14 @@
 @include sm {
     
     .card { width: 80%; }
+
+    .card:hover {
+
+        &__links {
+            opacity: 1;
+            transform: translateY(50%);
+        }
+    }
 }
 
 @include md {
@@ -149,28 +157,36 @@
     .card:hover {
 
         .card__title { transform: translateY(-160%); }
+
+        .card__links {
+            opacity: 1;
+            transform: translateY(50%);
+        }
     }
 
     .iconGit , .iconLink {
         width: 3rem;
-        margin-left: 1rem;
+        margin-left: 1.5rem;
        }
 }
 
 @include lg {
 
     .card {
-        max-width: 45%;
+        max-width: 40%;
         margin-bottom: 2rem;
         margin: 0;
 
         &__title { font-size: 2rem; }
+
+       
     }
 
     .iconGit , .iconLink {
-         border-radius: 50%;
+        border-radius: 50%;
         display: block;
         width: 2.5rem;
+        margin-left: 1rem;
     }
    
     .card:hover {
@@ -178,6 +194,12 @@
         .card__title { transform: translateY(-160%); }
     
         .card__info { transform: translateY(-15%); }
+
+        .card__links {
+            opacity: 1;
+            transform: translateY(50%);
+        }
+    
 
     }
 }
