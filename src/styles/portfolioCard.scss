@@ -16,7 +16,7 @@
         margin: auto;
         position: relative;
 
-        transition: opacity .3s ease-out;
+        transition: opacity .3s ease;
     }
     &__content {
         position: absolute;
@@ -176,6 +176,7 @@
         max-width: 40%;
         margin-bottom: 2rem;
         margin: 0;
+        transition: transform ease .3s;
 
         &__title { font-size: 2rem; }
 
@@ -192,6 +193,9 @@
     }
    
     .card:hover {
+
+        transform: scale(1.04);
+        box-shadow: 50px;
 
         .card__title { transform: translateY(-160%); }
     
