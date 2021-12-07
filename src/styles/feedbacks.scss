@@ -8,9 +8,99 @@
     font-family: "Oswald";
     
     &__title {
+        font-family: "Lobster";
         text-align: center;
+        margin: auto;
+        width: 50%;
         font-size: 1.25rem;
         padding: 2rem 0;
+        position: relative;
         
     }
 }
+
+.feedbacks__title--main {
+
+    &::before{
+        content: '';
+        width: 50%;
+        height: 5px;
+        display: inline-block;
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        background-color: #fff;
+    }
+
+    &::after{
+        content: '';
+        width: 50%;
+        height: 5px;
+        display: inline-block;
+        position: absolute;
+        left: 102%;
+        top: 50%;
+        background-color: #fff;
+    }
+
+}
+
+
+@include sm {
+
+.feedbacks {
+    width: 100%;
+    background-color: $blueGrey;
+    color: #fff;
+    font-family: "Oswald";
+    
+    &__title {
+        font-family: "Lobster";
+        text-align: center;
+        margin: auto;
+        width: 40%;
+        font-size: 1.5rem;
+        padding: 2rem 0;
+        position: relative;
+        
+    }
+}
+
+.feedbacks__title--main {
+
+    &::before{
+        content: '';
+        width: 25%;
+        height: 5px;
+        display: inline-block;
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        background-color: #fff;
+    }
+
+    &::after{
+        content: '';
+        width: 25%;
+        height: 5px;
+        display: inline-block;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        background-color: #fff;
+    }
+
+}
+}
+
+
+@include lg {
+
+    .feedbacks__title {
+            width: 30%;
+            font-size: 1.8rem;
+            padding: 3rem 0; 
+        }
+} 
+    
+   

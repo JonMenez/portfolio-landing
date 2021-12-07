@@ -2,11 +2,12 @@
 @import 'mixins';
 
 .cardFeed {
-    width: 90%;
+    width: 80%;
     background: #fff;
     color: #000;
     margin: auto;
     padding: 1rem;
+    border-radius: 10px;
 
     &__card {
         display: flex;
@@ -43,7 +44,87 @@
         text-align: center;
         padding: 1rem 0;
         font-weight: 200;
+        color: $grey;
     }
 
     
 }
+
+.cardFeed__body {
+    position: relative;
+   
+
+    &::before {
+        content: open-quote;
+        display: inline-block;
+        font-size: inherit;
+    }
+
+    &::after {
+        content: close-quote;
+        display: inline-block;
+        font-size: inherit;
+    }
+
+}
+
+
+@include sm {
+
+    .cardFeed {
+        width: 70%;
+    
+        &__card {
+            display: block;
+            text-align: center;
+            flex-direction: column;
+        }
+    
+        &__img {
+            width: 6rem;
+            margin-left: 0;
+        }
+    
+        &__text { padding-right: 0; }
+    }
+    
+    .cardFeed {
+    
+        &__title {
+            font-size: 1.7rem;
+        }
+    
+        &__span {
+            color: $secondary;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    
+        &__body { font-size: 1rem; }
+    }
+}
+
+
+
+@include lg {
+
+    .cardFeed {
+        width: 40%;
+        padding: 2rem;
+    
+        &__card {
+            display: block;
+            text-align: center;
+            flex-direction: column;
+        }
+    
+        &__img {
+            width: 7rem;
+            margin-left: 0;
+        }
+    }
+    
+}
+
+
+
