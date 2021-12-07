@@ -1,0 +1,16 @@
+@import 'vars';
+@import 'mixins';
+
+.feedbacks {
+    width: 100%;
+    background-color: $blueGrey;
+    color: #fff;
+    font-family: "Oswald";
+    
+    &__title {
+        text-align: center;
+        font-size: 1.25rem;
+        padding: 2rem 0;
+        
+    }
+}

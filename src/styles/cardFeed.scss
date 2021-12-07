@@ -1,0 +1,49 @@
+@import 'vars';
+@import 'mixins';
+
+.cardFeed {
+    width: 90%;
+    background: #fff;
+    color: #000;
+    margin: auto;
+    padding: 1rem;
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+        width: 5rem;
+        margin-left: 1rem;
+    }
+
+    &__text {
+        padding-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.cardFeed {
+
+    &__title {
+        font-size: 1.5rem;
+    }
+
+    &__span {
+        color: $secondary;
+        text-align: right;
+    }
+
+    &__body {
+        font-family: "Poppins";
+        font-size: .9rem;
+        text-align: center;
+        padding: 1rem 0;
+        font-weight: 200;
+    }
+
+    
+}
