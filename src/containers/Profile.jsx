@@ -1,5 +1,5 @@
 import React       from 'react';
-import Photo       from '@images/profile.png';
+import Photo       from '@images/profile.svg';
 import jsIcon      from '@icons/javascrpt.svg';
 import reactIcon   from '@icons/react.svg';
 import sassIcon    from '@icons/sass.svg';
