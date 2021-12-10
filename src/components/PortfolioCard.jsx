@@ -1,4 +1,4 @@
-import React from 'react';
+import  * as React  from 'react';
 import LinkIcon from '@icons/externalLink.svg';
 import GitIcon from '@icons/github.svg';
 import '@styles/portfolioCard.scss';

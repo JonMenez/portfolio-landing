@@ -1,4 +1,4 @@
-import React        from 'react';
+import  * as React  from 'react';
 import { useState } from 'react';
 import PorfolioIcon from '@icons/archive.svg';
 import FeedBack     from '@icons/message-detail.svg';

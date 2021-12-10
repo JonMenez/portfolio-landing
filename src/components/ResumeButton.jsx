@@ -1,4 +1,4 @@
-import React      from 'react';
+import  * as React  from 'react';
 import ResumeIcon from '@icons/resume.svg';
 import '@styles/resumeButton.scss';
 

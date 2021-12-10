@@ -1,4 +1,4 @@
-import React from 'react';
+import  * as React  from 'react';
 import arrowIcon from '@icons/arrow.svg';
 import PolygonShape from '@images/polygon.svg';
 import '@styles/welcome.scss';

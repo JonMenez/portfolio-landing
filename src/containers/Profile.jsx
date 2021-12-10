@@ -1,4 +1,4 @@
-import React       from 'react';
+import  * as React  from 'react';
 import Photo       from '@images/profile.svg';
 import jsIcon      from '@icons/javascrpt.svg';
 import reactIcon   from '@icons/react.svg';

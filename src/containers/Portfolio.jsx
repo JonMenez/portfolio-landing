@@ -1,4 +1,4 @@
-import React from 'react';
+import  * as React  from 'react';
 import projectsIcon from '@icons/projects.svg';
 import '@styles/portfolio.scss';
 import PortfolioCard from '@components/PortfolioCard';

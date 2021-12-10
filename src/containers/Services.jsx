@@ -1,4 +1,4 @@
-import React        from 'react'
+import  * as React  from 'react';
 import CardServices from '@components/CardServices'
 import {datas}  from "@components/ServicesList.js";
 import '@styles/services.scss';

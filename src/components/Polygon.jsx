@@ -1,4 +1,4 @@
-import React from 'react';
+import  * as React  from 'react';
 import { Fragment } from 'react';
 import PolygonIcon     from '@images/polygon.svg';
 import PolygonMain from '@images/polygon-main.svg';
