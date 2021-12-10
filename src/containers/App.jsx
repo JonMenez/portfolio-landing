@@ -6,6 +6,7 @@ import Services     from '@containers/Services';
 import Welcome      from '@containers/Welcome';
 import Portfolio    from '@containers/Portfolio';
 import Feedbacks    from '@containers/Feedbacks';
+import Contact      from '@containers/Contact';
 import '@styles/app.scss';
 
 
@@ -19,6 +20,7 @@ const App = () => {
            <Welcome />
            <Portfolio />
            <Feedbacks />
+           <Contact />
         </Fragment>
     )
 }
