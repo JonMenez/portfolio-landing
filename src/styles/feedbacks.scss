@@ -1,6 +1,10 @@
 @import 'vars';
 @import 'mixins';
 
+:root{
+    --swiper-theme-color: #fff;
+}
+
 .feedbacks {
     width: 100%;
     background-color: $blueGrey;
@@ -11,19 +15,41 @@
         font-family: "Lobster";
         text-align: center;
         margin: auto;
-        width: 50%;
-        font-size: 1.25rem;
-        padding: 2rem 0;
+        width: 55%;
+        font-size: 1.3rem;
+        padding: {
+            top: 2rem;
+            bottom: .5rem;
+        }
         position: relative;
         
     }
 }
 
+.feedbacks__swiper {
+    width: 100%;
+    height: 21.5em;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+    display: none;
+}
+
+.feedbacks__wave {
+    background-color: #fff;
+    
+}
+
 .feedbacks__title--main {
+
+    padding: {
+        top: 4rem;
+        bottom: 3rem;
+    }
 
     &::before{
         content: '';
-        width: 50%;
+        width: 35%;
         height: 5px;
         display: inline-block;
         position: absolute;
@@ -34,7 +60,7 @@
 
     &::after{
         content: '';
-        width: 50%;
+        width: 35%;
         height: 5px;
         display: inline-block;
         position: absolute;
@@ -59,11 +85,37 @@
         text-align: center;
         margin: auto;
         width: 40%;
+        padding: {
+            top: 2rem;
+            // bottom: 3.5rem;
+        };
         font-size: 1.5rem;
-        padding: 2rem 0;
         position: relative;
         
     }
+
+    .feedbacks__title--main {
+        padding: {
+            top: 5rem;
+            bottom: 4rem;
+        }
+    }
+
+.feedbacks__swiper {
+    width: 90%;
+    height: 28em;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+    display: flex;
+}
+
+.feedbacks__wave {
+    background-color: #fff;
+   
+}
+
+
 }
 
 .feedbacks__title--main {
@@ -93,13 +145,39 @@
 }
 }
 
+@include md {
+
+    .feedbacks__title {
+        font-size: 1.8rem;
+    }
+
+    #feedbacks__swiper {
+        width: 80%;
+        height: 25em;
+    }
+
+    .swiper-button-prev:after, .swiper-button-next:after {
+        transform: translateY(-30px);
+    }
+}
+
 
 @include lg {
 
     .feedbacks__title {
-            width: 30%;
-            font-size: 1.8rem;
-            padding: 3rem 0; 
+            width: 35%;
+            font-size: 2rem;
+            // padding: 2.5rem 0; 
+        }
+
+    .feedbacks__title--main {
+        width: 30%;
+    }
+
+     #feedbacks__swiper {
+            height: 28em;
+            width: 50%;
+
         }
 } 
     

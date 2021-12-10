@@ -2,7 +2,7 @@
 @import 'mixins';
 
 .cardFeed {
-    width: 80%;
+    width: 75%;
     background: #fff;
     color: #000;
     margin: auto;
@@ -72,7 +72,7 @@
 @include sm {
 
     .cardFeed {
-        width: 70%;
+        width: 75%;
     
         &__card {
             display: block;
@@ -104,12 +104,18 @@
     }
 }
 
+@include md {
+    .cardFeed__title {
+        font-size: 1.6rem;
+    }
+}
+
 
 
 @include lg {
 
     .cardFeed {
-        width: 40%;
+        width: 80%;
         padding: 2rem;
     
         &__card {
