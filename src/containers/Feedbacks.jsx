@@ -1,6 +1,5 @@
 import * as React from 'react';
 import CardFeed from '@components/CardFeed';
-import wave from '@images/wave.svg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation} from 'swiper';
 import 'swiper/scss';
@@ -29,7 +28,6 @@ const Feedbacks = () => {
       <SwiperSlide><CardFeed /></SwiperSlide>
     </Swiper>
             <h4 className="feedbacks__title">every opinion we receive help us a lot</h4>
-            <img className="feedbacks__wave" src={ wave } alt="wave shape" />
             </section>
     )
 }
