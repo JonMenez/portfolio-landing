@@ -35,10 +35,6 @@
     display: none;
 }
 
-.feedbacks__wave {
-    background-color: #fff;
-    
-}
 
 .feedbacks__title--main {
 
@@ -74,48 +70,40 @@
 
 @include sm {
 
-.feedbacks {
-    width: 100%;
-    background-color: $blueGrey;
-    color: #fff;
-    font-family: "Oswald";
-    
-    &__title {
-        font-family: "Lobster";
-        text-align: center;
-        margin: auto;
-        width: 40%;
-        padding: {
-            top: 2rem;
-            // bottom: 3.5rem;
-        };
-        font-size: 1.5rem;
-        position: relative;
-        
-    }
-
-    .feedbacks__title--main {
-        padding: {
-            top: 5rem;
-            bottom: 4rem;
-        }
-    }
-
-.feedbacks__swiper {
-    width: 90%;
-    height: 28em;
-}
-
-.swiper-button-prev:after, .swiper-button-next:after {
-    display: flex;
-}
-
-.feedbacks__wave {
-    background-color: #fff;
-   
-}
-
-
+     .feedbacks {
+         width: 100%;
+         background-color: $blueGrey;
+         color: #fff;
+         font-family: "Oswald";
+         
+         &__title {
+             font-family: "Lobster";
+             text-align: center;
+             margin: auto;
+             width: 40%;
+             padding: {
+                 top: 2rem;
+             };
+             font-size: 1.5rem;
+             position: relative;
+             
+         }
+     
+         .feedbacks__title--main {
+             padding: {
+                 top: 5rem;
+                 bottom: 4rem;
+             }
+         }
+     
+     .feedbacks__swiper {
+         width: 90%;
+         height: 28em;
+     }
+     
+     .swiper-button-prev:after, .swiper-button-next:after {
+         display: flex;
+       }
 }
 
 .feedbacks__title--main {

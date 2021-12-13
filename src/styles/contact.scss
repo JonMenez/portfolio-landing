@@ -1,0 +1,124 @@
+@import 'vars';
+@import 'mixins';
+
+
+.contact {
+    font-family: "Poppins";
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    
+    &__title {
+        position: relative;
+        width: clamp(300px, 80vw - 1rem, 800px);
+        font-weight: 200;
+        font-size: 1.5rem;
+        margin: 4rem auto;
+        color: $grey;
+    }
+
+    &__text {
+        width: 80%;
+        text-align: center;
+        color: $grey;
+        font-weight: 300;
+        margin: 5rem auto;
+
+        strong {
+            font-weight: 500;
+            display: block;
+        }
+
+    }
+}
+
+
+.contact__title {
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 140%;
+        display: block;
+        height: 2px;
+        width: 60%;
+        background-color: $grey;
+
+        transform: translateX(-50%);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 140%;
+        left: 50%;
+        display: block;
+        height: 2px;
+        width: 60%;
+        background-color: $grey;
+
+        transform: translateX(-50%);
+    }
+}
+
+@include sm {
+    
+    
+    .contact__title {
+    
+        &::before {
+            bottom: 160%;
+        }
+    
+        &::after {
+            top: 160%;
+            
+        }
+    }
+}
+
+@include md {
+    
+    .contact__title {
+        font-size: 1.7rem;
+    
+        &::before { 
+            bottom: 140%;  
+            width: 50%;
+        }
+    
+        &::after {
+            top: 140%;
+            width: 50%;
+        }
+    }
+
+    .contact__text {
+        font-size: 1.1rem;
+        margin-top: 6rem;
+    }
+}
+
+@include lg {
+    .contact__title {
+        font-size: 2rem;
+
+        &::before { 
+            bottom: 160%;  
+            width: 50%;
+        }
+    
+        &::after {
+            top: 160%;
+            width: 50%;
+        }
+    }
+
+    .contact__text {
+        font-size: 1.2rem;
+        margin-top: 7rem;
+    }
+}
+
