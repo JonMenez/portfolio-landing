@@ -8,6 +8,8 @@
     display: block;
     text-align: center;
     margin: auto;
+
+    height: 150vh;
     
     &__title {
         position: relative;
@@ -24,6 +26,7 @@
         color: $grey;
         font-weight: 300;
         margin: 5rem auto;
+        margin-bottom: 4rem;
 
         strong {
             font-weight: 500;
@@ -67,6 +70,7 @@
     
     
     .contact__title {
+        margin: 2rem auto;
     
         &::before {
             bottom: 160%;
