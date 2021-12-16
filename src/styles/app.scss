@@ -8,4 +8,11 @@
       color: #fff;
       display: block;
     }
+    
+    input, textarea {
+      -webkit-appearance: none;
+      appearance: none;
+      outline: none;
+    }
+
   }
