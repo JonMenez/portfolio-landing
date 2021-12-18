@@ -16,7 +16,7 @@
         margin: auto;
         position: relative;
 
-        transition: opacity .3s ease;
+        transition: opacity .3s ease 0s;
     }
     &__content {
         position: absolute;
@@ -26,7 +26,7 @@
         display: inline-block;
         background: transparent;
 
-        transition: transform .3s ease;
+        transition: transform .3s ease 0s;
     }
 }
 
@@ -43,7 +43,7 @@
         padding: .2rem .5rem;
         
         transform: translateY(-60%);
-        transition: transform .25s ease;
+        transition: transform .25s ease 0s;
 
     }
 
@@ -57,7 +57,7 @@
         width: 90%;
         padding: .5rem;
 
-        transition: transform .3s ease-out;
+        transition: transform .3s ease-out 0s;
         transform: translateY(150%);
     }
 
@@ -69,7 +69,7 @@
         opacity: 0;
 
         transform: translateY(100%);
-        transition: transform .3s ease;
+        transition: transform .3s ease 0s;
     }
 
 
