@@ -7,6 +7,7 @@ import Welcome      from '@containers/Welcome';
 import Portfolio    from '@containers/Portfolio';
 import Feedbacks    from '@containers/Feedbacks';
 import Contact      from '@containers/Contact';
+import Footer       from '@containers/Footer';
 import '@styles/app.scss';
 
 
@@ -21,6 +22,7 @@ const App = () => {
            <Portfolio />
            <Feedbacks />
            <Contact />
+           <Footer />
         </Fragment>
     )
 }
