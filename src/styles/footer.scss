@@ -1,0 +1,220 @@
+@import "vars";
+@import "mixins";
+
+
+.footer {
+    width: 100%;
+    background-color: $primary;
+    color: #fff;
+    padding: 2rem;
+    border-top-left-radius: 70px;
+    font-family: "Poppins" ,sans-serif;
+    
+     /*   "About me" title   */
+
+    &__title {
+        position: relative;
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-align: right;
+        margin-bottom: .8rem;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: #fff;
+            width: 45%;
+            height: 3px;
+
+        }
+    }
+}
+
+/*  Footer text  */
+
+.footer {
+
+    /*   "HEY" text   */
+    &__hey {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: .5rem;
+    }
+
+    /* Text */
+
+    &__text {
+        width: 100%;
+        font-size: .9rem;
+        font-weight: 300;
+        margin-bottom: 3rem;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 120%;
+            left: 0;
+            background-color: #fff;
+            width: 45%;
+            height: 3px;
+        }
+    }
+
+    /*  "Joan"  text  */
+
+    &__name {
+        font-weight: 800;
+        font-size: 1rem;
+        -webkit-text-stroke: 1px black;
+        color: $secondary;
+    
+    }
+}
+
+
+/*  Navigation list  */
+
+.footer {
+
+    &__list {
+        padding-bottom: 1.5rem;
+    }
+
+
+    &__link {
+        padding-bottom: 1rem;
+    }
+}
+
+
+/*  Social media icons  */
+
+.footer {
+    &__icons {
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        /*  underscore links  */
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 35%;
+            left: 0;
+            background-color: #fff;
+            width: 100%;
+            height: 2px;
+        }
+    }
+
+
+    /*  indivucuals icons  */
+    &__link--icon {
+        margin: 1rem;
+        margin-bottom: 2rem;
+        width: 2rem;
+    }
+}
+
+/*  info & copyright  */
+
+.footer {
+    &__copyright {
+        color: #999;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    /*  developer  */
+    &__develop {
+        margin-bottom: 1rem;
+
+        span {
+            display: block;
+        }
+    }
+    /*  copyright text  */
+    .rights {
+        font-size: .8rem;
+
+        .copyrightIcon {
+            width: .9rem;
+            vertical-align: -2.5px;
+        }
+    }
+
+}
+
+.footer__title--hidden {
+    display: none;
+}
+
+@include md {
+      .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__about {
+            width: 45%;
+        }
+
+        &__list {
+            width: 35%;
+            margin-left: 4rem;
+
+        }
+
+        &__icons {
+            display: flex;
+            flex-wrap: wrap;
+            width: 45%;
+
+            &::after {
+                content: "";
+                display: none;
+                position: absolute;
+                // bottom: 0;
+                right: 0;
+                background-color: #fff;
+                width: 100%;
+                height: 2px;
+                transform: rotate(90deg);
+            }
+        }
+
+        &__link--icon {
+            margin: 1rem;
+            margin-bottom: 0;
+        }
+
+        &__copyright {
+            width: 35%;
+        }
+      }
+
+      .footer__title--hidden {
+        display: block;
+        position: relative;
+        width: 100%;
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-align: right;
+        margin-bottom: .8rem;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: #fff;
+            width: 50%;
+            height: 3px;
+
+        }
+    }
+}
