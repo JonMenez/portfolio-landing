@@ -24,7 +24,6 @@ const FormContact = () => {
                   type="name" 
                   name="email" 
                   aria-label="email"
-                  inputmode="text"
                   autoComplete='off'
                   required />
                   <label 

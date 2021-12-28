@@ -22,37 +22,37 @@ const NavBar = () => {
         id={active ? "active" : ""}
         >
           <li className="navigation__item home">
-            <a href="#">
+            <a href="#home">
               <img src={ HomeIcon } alt="Home button" />
             </a>
           </li>
           <li className="navigation__item nav__tablet1">
             <img className="nav__icon" src={ PorfolioIcon } alt="Porfolio icon" />
-            <a className="navigation__link" href="#">
+            <a className="navigation__link" href="#portfolio">
               Portfolio
             </a>
           </li>
           <li className="navigation__item ">
             <img className="nav__icon" src={ PorfolioIcon} alt="Servies icon" />
-            <a className="navigation__link" href="#">
+            <a className="navigation__link" href="#services">
               Services
             </a>
           </li>
           <li className="navigation__item ">
             <img className="nav__icon" src={ FeedBack } alt="Feedback icon" />
-            <a className="navigation__link" href="#">
+            <a className="navigation__link" href="#feedbacks">
               Feedbacks
             </a>
           </li>
           <li className="navigation__item nav__tablet2">
             <img className="nav__icon" src={ AboutIcon } alt="About me icon" />
-            <a className="navigation__link" href="#">
+            <a className="navigation__link" href="#about">
               About me
             </a>
           </li>
           <li className="navigation__item contactButton">
           <img className="nav__icon--contact" src={ ContactIcon } alt="Porfolio icon" />
-            <a className="navigation__link" href="#">
+            <a className="navigation__link" href="#contact">
               Contact me
             </a>
           </li>

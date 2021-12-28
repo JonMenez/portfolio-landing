@@ -10,7 +10,7 @@
     border-top-left-radius: 70px;
     font-family: "Poppins" ,sans-serif;
     
-     /*   "About me" title   */
+     /* ----------  "About me" title  ---------- */
 
     &__title {
         position: relative;
@@ -32,7 +32,7 @@
     }
 }
 
-/*  Footer text  */
+/* ---------- Footer text ---------- */
 
 .footer {
 
@@ -76,7 +76,7 @@
 }
 
 
-/*  Navigation list  */
+/* ---------- Navigation list ---------- */
 
 .footer {
 
@@ -91,7 +91,7 @@
 }
 
 
-/*  Social media icons  */
+/* ---------- Social media icons ---------- */
 
 .footer {
     &__icons {
@@ -118,9 +118,13 @@
         margin-bottom: 2rem;
         width: 2rem;
     }
+
+    &__link--text {
+        display: none;
+    }
 }
 
-/*  info & copyright  */
+/* ---------- info & copyright ---------- */
 
 .footer {
     &__copyright {
@@ -149,55 +153,61 @@
 
 }
 
-.footer__title--hidden {
+.footer__title--links, 
+.footer__title--social {
     display: none;
 }
 
 @include md {
+
+    /* ---------- Footer container ---------- */
       .footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
 
+
+    /* ---------- about me blcok ---------- */
         &__about {
             width: 45%;
         }
 
+    /* ---------- links icons block ---------- */
         &__list {
             width: 35%;
-            margin-left: 4rem;
-
         }
 
+    /* ---------- social media block ---------- */
         &__icons {
-            display: flex;
-            flex-wrap: wrap;
-            width: 45%;
+            width: 100%;
 
             &::after {
                 content: "";
-                display: none;
                 position: absolute;
-                // bottom: 0;
+                margin: auto;
+                bottom: 0;
                 right: 0;
-                background-color: #fff;
-                width: 100%;
-                height: 2px;
-                transform: rotate(90deg);
+                width: 40%;
             }
         }
 
+        /*  individual social icons  */
+
         &__link--icon {
-            margin: 1rem;
+            width: 2.5rem;
             margin-bottom: 0;
         }
 
+        /*  copyright block  */
+
         &__copyright {
-            width: 35%;
+            width: 100%;
+            margin-top: 3rem;
         }
       }
-
-      .footer__title--hidden {
+    
+    /* ---------- Links & Socialmedia titles ---------- */
+    .footer__title--links {
         display: block;
         position: relative;
         width: 100%;
@@ -213,6 +223,115 @@
             right: 0;
             background-color: #fff;
             width: 50%;
+            height: 3px;
+
+        }
+    }
+}
+
+@include lg {
+
+    /* ---------- Footer container ---------- */
+
+      .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+
+    /*  about me blcok  */
+        &__about {
+            width: 30%;
+        }
+    }
+
+    /* ---------- links icons block ---------- */
+
+    .footer {
+        &__list {
+            width: 20%;
+        }
+
+        &__link {
+            margin-bottom: .8rem;
+
+            transition: all .2s ease .0s;
+
+            &:hover {
+                filter: opacity(.7);
+            }
+        }
+    }
+
+    /* ---------- social media block ---------- */
+
+    .footer {
+        &__icons {
+          display: block;
+          position: relative;
+          width: 25%;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        /*  individual social icons  */
+        &__link--icon {
+            width: 2rem;
+            margin: .5rem;
+        }
+
+        &__link--text {
+            display: block;
+        }
+
+    }
+
+        .social-links {
+            display: flex;
+            align-items: center;
+            padding-bottom: .5rem;
+
+            transition: all .2s ease .0s;
+
+            &:hover {
+                filter: opacity(.7);
+            }
+        }
+    
+
+    .footer {
+
+        /*  copyright block  */
+
+        &__copyright {
+            margin-top: 0;
+        }
+    }
+
+    .rights {
+        margin-top: 2rem;
+    }
+    
+    /*  Links & Socialmedia titles  */
+    .footer__title--links,
+    .footer__title--social {
+        display: block;
+        position: relative;
+        width: 100%;
+        font-size: 1.3rem;
+        font-weight: 500;
+        text-align: right;
+        margin-bottom: .8rem;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: #fff;
+            width: 60%;
             height: 3px;
 
         }

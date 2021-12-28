@@ -1,5 +1,6 @@
 import  * as React  from 'react';
-import Photo       from '@images/profile.svg';
+// import Photo       from '@images/profile.svg';
+import Photo       from '@images/profile.jpeg';
 import jsIcon      from '@icons/javascrpt.svg';
 import reactIcon   from '@icons/react.svg';
 import sassIcon    from '@icons/sass.svg';
@@ -15,7 +16,7 @@ const Profile = () => {
 
     return (
         
-        <section className="profile">
+        <section id="home" className="profile">
             <img className="profile__pic"  src={ Photo } alt="Profile photo" />
             <div className="profile__body">
                 <h1 className="profile__title">@Jon_menez</h1>

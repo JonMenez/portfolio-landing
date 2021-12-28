@@ -182,6 +182,7 @@ border-radius: 4px;
           padding: .5rem;
           color: $lightGrey;
           position: relative;
+          z-index: 3;
 
           &:hover {
             color: #fff;
@@ -191,10 +192,12 @@ border-radius: 4px;
   
   }
 
-  .navigation__link {
+  .navigation__link:not(:last-child) {
+
 
     &::after {
     content: '';
+    pointer-events: all;
     position: absolute;
     left: 7%;
     bottom: 8%;

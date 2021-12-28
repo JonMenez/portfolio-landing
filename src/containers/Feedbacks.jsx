@@ -10,7 +10,7 @@ import '@styles/feedbacks.scss';
 const Feedbacks = () => {
 
     return (
-        <section className="feedbacks">
+        <section id="feedbacks" className="feedbacks">
             <h4 className="feedbacks__title feedbacks__title--main">We really care about what you have to say!</h4>
             <Swiper
             modules={[ Pagination, Navigation]}

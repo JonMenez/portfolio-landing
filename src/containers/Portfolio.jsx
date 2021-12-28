@@ -6,7 +6,7 @@ import PortfolioCard from '@components/PortfolioCard';
 
 const Portfolio = () => {
     return (
-        <section className="portfolio">
+        <section id="portfolio" className="portfolio">
             <img className="portfolio__title" src={ projectsIcon } alt="" />
             <div className="portfolio__card">
             <PortfolioCard/>
